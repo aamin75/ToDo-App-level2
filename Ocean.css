@@ -1,0 +1,200 @@
+    html {
+        height: 100vh;
+        min-width: 600px;
+        background-image: linear-gradient(130deg, lightskyblue, lightseagreen);
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    
+    .container {
+        width: 600px;
+        justify-content: center;
+        margin: auto;
+        font-family: 'Ubuntu', sans-serif;
+        background-image: url(images/underwater.jpg);
+        background-size: contain;
+        animation: cont-enter 2s ease-in;
+    }
+    
+    @keyframes cont-enter {
+        from {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        to {
+            opacity: 100;
+            transform: translateY(0%);
+        }
+    }
+    
+    .logo {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        max-width: 500px;
+        align-items: center;
+    }
+    
+    .main {
+        padding: 20px;
+    }
+    
+    .inputForm {
+        background-color: #FFFFFF;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .inputForm>small {
+        font-size: 1rem;
+        transform: translate(-80%, 8px);
+        color: red;
+        animation: blinking 1s infinite;
+    }
+    
+    @keyframes blinking {
+        0% {
+            opacity: 100%;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .infoForm {
+        background-color: #ffffffc9;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    #countComplete {
+        margin-left: 390px;
+    }
+    
+    input[type="text"] {
+        height: 30px;
+        outline: 0;
+        border: none;
+        font-size: 1rem;
+        font-family: 'Ubuntu', sans-serif;
+        color: #595959;
+        flex-grow: 1;
+    }
+    
+    button {
+        font-size: 1.5rem;
+        background-color: transparent;
+        outline: 0;
+        border: none;
+        color: #595959;
+        justify-content: flex-end;
+    }
+    
+    button:hover {
+        color: lightcoral;
+    }
+    
+    .todoList {
+        background-color: #ffffffc9;
+        border-radius: 5px;
+        padding: 10px, 25px;
+        height: 100%;
+    }
+    
+    ul {
+        padding: 10px 10px;
+        list-style: none;
+    }
+    
+    li {
+        display: flex;
+        align-items: center;
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        margin: 10px 20px;
+        font-size: 1rem;
+        color: #595959;
+    }
+    
+    i {
+        pointer-events: none;
+        margin: 0 5px;
+    }
+    
+    .todo-item {
+        flex-grow: 1;
+        padding-left: 10px;
+        text-decoration: none;
+    }
+    
+    .todo-item-completed {
+        flex-grow: 1;
+        padding-left: 10px;
+        text-decoration: line-through;
+        transition: color 1s;
+        color: rgb(184, 184, 184);
+    }
+    
+    .clearAll {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 10px;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+    
+    .clearAll:hover {
+        color: lightcoral;
+    }
+    
+    .todo-list-item {
+        font-size: 1.5rem;
+        padding: 0 10px;
+        transition: all 1s ease-out;
+        background-color: aqua;
+    }
+    
+    .todo-list-item:nth-child(even) {
+        flex-direction: row-reverse;
+        background-color: lightskyblue;
+        text-align-last: right;
+    }
+    
+    .todo-list-item-fall {
+        transform: translateY(12rem) rotateZ(30deg);
+        transition-duration: 1s;
+        opacity: 0;
+    }
+    
+    .styleLinks>a {
+        padding: 5px 10px;
+        border: 1px solid lightgrey;
+        background-color: #ffffffc9;
+        border-radius: 10px;
+    }
+    
+    #autumn:hover {
+        font-size: 1.25rem;
+        color: lightcoral;
+    }
+    
+    #ocean:visited {
+        color: lightgray;
+    }
+    /*
+    li>span::before {
+        content: "🐋";
+        display: block;
+        background-color: black;
+        height: 2px;
+        transform: translate(0, 17px) scale(0.1, 1);
+        width: 100%;
+        transition: width 0.5s;
+    }*/

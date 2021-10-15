@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App JavaScript</title>
+    <link id="stylelink" rel="stylesheet" href="Autumn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="container">
+    <header class="logo">
+        <h1 class="headline">ToDo App JavaScript</h1>
+    </header>
+    <div class="main">
+        <form class="inputForm">
+            <input type="text" placeholder="New Task ...">
+            <small></small>
+            <button type="submit"><i class="fas fa-plus-square"></i></button>
+
+        </form>
+        <div>
+            <form class="infoForm">
+                <p id="countItem">0 item </p>
+                <p id="countComplete"> 0 completed </p>
+            </form>
+        </div>
+        <div class="todoList">
+            <ul>
+            </ul>
+            <a class="clearAll" id="clearAll">Clear All</a>
+        </div>
+    </div>
+    <div class="styleLinks">
+        <a id='autumn' href="#" onclick="document.getElementById('stylelink').href = 'Autumn.css'">Autumn</a>
+        <a id='ocean' href="#" onclick="document.getElementById('stylelink').href = 'Ocean.css'">Ocean</a>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
